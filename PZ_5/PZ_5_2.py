@@ -5,10 +5,10 @@
 import random
 
 def DigitCountSum(K):
-    num_str = str(K)  # преобразуем число в строку
-    digits = list(map(int, str(num_str)))  # преобразуем каждую цифру в числовой формат и преобразуем объект map в список
-    C = len(digits)  # количество цифр равно длине списка digits
-    S = sum(digits)  # сумма цифр равна сумме всех элементов списка digits
+    num_str = str(K)
+    digits = list(map(int, str(num_str)))
+    C = len(digits)
+    S = sum(digits)
     print(f'Количество цифр в числе {K}: {C}, сумма цифр: {S}')
     return C, S
 
