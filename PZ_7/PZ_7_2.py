@@ -3,6 +3,5 @@
 S = "abc def ghi abc jkl abc asdsa adsasd"
 S1 = "abc"
 S2 = "123"
-index_last = S.rfind(S1)
-S = S[:index_last] + S2 + S[index_last + len(S2):]
+S = S[::-1].replace(S1[::-1], S2[::-1], 1)[::-1]
 print(S)
