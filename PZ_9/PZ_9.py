@@ -13,4 +13,8 @@ for i in fruits.split():
         key = i
         sales[key] = []
 
-print(sales)
+sred = sum(sales['апельсины']) / len((sales['апельсины']))
+sredn = sum(sales['яблоки']) / len((sales['яблоки']))
+print(f'Продукция: {sales}')
+print(f'Среднее значение продаж апельсинов: {sred}')
+print(f'Среднее значение продаж яблок {sredn}')
