@@ -11,14 +11,14 @@ class Car:
         self.model = model
         self.year = year
 
-def save_def(cars, fname):
+def save_def(info_cars, fname):
     with open(fname, 'wb') as f:
-        pickle.dump(cars, f)
+        pickle.dump(info_cars, f)
 
 def load_def(fname):
     with open(fname, 'rb') as f:
-        cars = pickle.load(f)
-    return cars
+        info_cars = pickle.load(f)
+    return info_cars
 
     def info(self):
         print(f'"Марка: {self.mark}, Модель: {self.model}, Год выпуска: {self.year}')
@@ -28,8 +28,8 @@ car1 = Car('Toyota', 'Corolla', 2015)
 car2 = Car('Honda', 'Civic', 2018)
 car3 = Car('Ford', 'Focus', 2012)
 
-cars = [car1, car2, car3]
-save_def(cars, 'cars.pkl')
+info_cars = [car1, car2, car3]
+save_def(info_cars, 'cars.pkl')
 
 loaded = load_def('cars.pkl')
 for i in loaded:
