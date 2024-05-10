@@ -28,8 +28,8 @@ car1 = Car('Toyota', 'Corolla', 2015)
 car2 = Car('Honda', 'Civic', 2018)
 car3 = Car('Ford', 'Focus', 2012)
 
-cars = [car1, car2, car3]
-save_def(cars, 'cars.pkl')
+info_cars = [car1, car2, car3]
+save_def(info_cars, 'cars.pkl')
 
 loaded = load_def('cars.pkl')
 for i in loaded:
