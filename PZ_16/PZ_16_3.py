@@ -35,3 +35,4 @@ loaded = load_def('cars.pkl')
 for i in loaded:
     print(f"Mark: {i.mark}, Model: {i.model}, Year: {i.year}")
 
+
